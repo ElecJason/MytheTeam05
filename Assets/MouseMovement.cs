@@ -5,9 +5,9 @@ using UnityEngine;
 public class MouseMovement : MonoBehaviour
 {
 
-    public float mouseSensetivity = 100f;
+    [SerializeField] private float mouseSensetivity = 100f;
 
-    public Transform playerBody;
+    [SerializeField] private Transform playerBody;
 
     private float xRotation = 0f;
     // Start is called before the first frame update
