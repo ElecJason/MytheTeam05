@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class ChasePlayer : MonoBehaviour
+public class EnemyBehavior : MonoBehaviour
 {
     [SerializeField] private GameObject player;
     [SerializeField] private NavMeshAgent agent;
@@ -11,6 +11,13 @@ public class ChasePlayer : MonoBehaviour
 
     [SerializeField] private float normalSpeed = 3;
     [SerializeField] private float runningSpeed = 6;
+    [SerializeField] private float runDistance = 4;
+
+    [SerializeField] private float minFloat = -3;
+    [SerializeField] private float maxFloat = 3;
+
+    private bool isWandering = false;
+    private Vector3 randomVector;
 
     private void Start()
     {
@@ -19,27 +26,40 @@ public class ChasePlayer : MonoBehaviour
 
     void Update()
     {
-        //agent.SetDestination(player.transform.position);
-
-        if (Input.GetKey(KeyCode.E))
+        if(isWandering == false)
         {
-            agent.SetDestination(destination.transform.position);
-        }
-        else
-        {
-            agent.SetDestination(player.transform.position);
+            FollowPlayer();
         }
 
         float dist = Vector3.Distance(player.transform.position, transform.position);
 
-        if (dist >= 6) {
+        if (dist >= runDistance) {
             agent.speed = runningSpeed;
         }
         else
         {
             agent.speed = normalSpeed;
         }
-        //Debug.Log(dist);
-        //Debug.Log(agent.speed);
+    }
+
+    void FollowPlayer()
+    {
+        agent.SetDestination(player.transform.position);
+    }
+
+    public void StartWander()
+    {
+        isWandering = true;
+        randomVector = new Vector3(Random.Range(minFloat, maxFloat), Random.Range(minFloat, maxFloat), Random.Range(minFloat, maxFloat));
+    }
+
+    public void StayWander()
+    {
+        agent.SetDestination(randomVector);
+    }
+
+    public void StopWander()
+    {
+        isWandering = false;
     }
 }
