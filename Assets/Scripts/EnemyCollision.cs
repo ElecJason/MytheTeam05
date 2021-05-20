@@ -8,7 +8,8 @@ public class EnemyCollision : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Enemy"))
         {
-            Debug.Log("awake");
+            Debug.LogError("De game is klaar");
+            Time.timeScale = 0.2f;
         }
     }
 }
