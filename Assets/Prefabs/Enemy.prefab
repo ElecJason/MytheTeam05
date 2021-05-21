@@ -134,3 +134,5 @@ MonoBehaviour:
   destination: {fileID: 0}
   normalSpeed: 3
   runningSpeed: 6
+  minFloat: -1
+  maxFloat: 1

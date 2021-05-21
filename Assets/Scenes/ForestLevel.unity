@@ -561,17 +561,17 @@ PrefabInstance:
         type: 3}
       propertyPath: stayWander.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 794682900}
+      objectReference: {fileID: 0}
     - target: {fileID: 5980826349232046423, guid: bf65aa00ea9cb2d45a1f020996d5c537,
         type: 3}
       propertyPath: stopWander.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 794682900}
+      objectReference: {fileID: 0}
     - target: {fileID: 5980826349232046423, guid: bf65aa00ea9cb2d45a1f020996d5c537,
         type: 3}
       propertyPath: startWander.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 794682900}
+      objectReference: {fileID: 0}
     - target: {fileID: 5980826349232046423, guid: bf65aa00ea9cb2d45a1f020996d5c537,
         type: 3}
       propertyPath: stayWander.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -611,7 +611,7 @@ PrefabInstance:
         type: 3}
       propertyPath: callWanderFunction.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 794682900}
+      objectReference: {fileID: 0}
     - target: {fileID: 5980826349232046423, guid: bf65aa00ea9cb2d45a1f020996d5c537,
         type: 3}
       propertyPath: callWanderFunction.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -2732,8 +2732,8 @@ GameObject:
   - component: {fileID: 794682903}
   - component: {fileID: 794682902}
   - component: {fileID: 794682901}
-  - component: {fileID: 794682900}
   - component: {fileID: 794682906}
+  - component: {fileID: 794682900}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -2750,7 +2750,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 794682899}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e195349e65ab4b14ca6a71a8807a2887, type: 3}
+  m_Script: {fileID: 11500000, guid: f18d4ffd16ae8a548ac0ccf199abcab9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1009436649}
@@ -2758,9 +2758,6 @@ MonoBehaviour:
   destination: {fileID: 0}
   normalSpeed: 3
   runningSpeed: 6
-  runDistance: 4
-  minFloat: -3
-  maxFloat: 3
 --- !u!195 &794682901
 NavMeshAgent:
   m_ObjectHideFlags: 0

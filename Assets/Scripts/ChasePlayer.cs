@@ -3,18 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class EnemyBehavior : MonoBehaviour
+public class ChasePlayer : MonoBehaviour
 {
     [SerializeField] private GameObject player;
     [SerializeField] private NavMeshAgent agent;
-    [SerializeField] private GameObject destination;
 
     [SerializeField] private float normalSpeed = 3;
     [SerializeField] private float runningSpeed = 6;
     [SerializeField] private float runDistance = 4;
 
-    [SerializeField] private float minFloat = -3;
-    [SerializeField] private float maxFloat = 3;
+    [SerializeField] private float minFloat = -1;
+    [SerializeField] private float maxFloat = 1;
 
     private bool isWandering = false;
     private Vector3 randomVector;
@@ -55,7 +54,7 @@ public class EnemyBehavior : MonoBehaviour
 
     public void StayWander()
     {
-        agent.SetDestination(randomVector);
+        agent.SetDestination(transform.position +  randomVector);
     }
 
     public void StopWander()
