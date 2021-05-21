@@ -8,6 +8,8 @@ public class EnemyCollision : MonoBehaviour
     [SerializeField] private UnityEvent startWander;
     [SerializeField] private UnityEvent stayWander;
     [SerializeField] private UnityEvent stopWander;
+
+    [SerializeField] private UnityEvent score;
     void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.CompareTag("Enemy"))
