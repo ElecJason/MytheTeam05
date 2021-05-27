@@ -22,7 +22,15 @@ public class ScoreSystem : MonoBehaviour
 
     private void Update()
     {
-        scoreDisplay.text = "Time: " + minutes + ":" + seconds.ToString();
+        if(Score < 10)
+        {
+            scoreDisplay.text = "Time: " + minutes + ":0" + seconds.ToString();
+        }
+        else
+        {
+            scoreDisplay.text = "Time: " + minutes + ":" + seconds.ToString();
+        }
+        
     }
 
     private IEnumerator WaitAndPrint(float waitTime)
