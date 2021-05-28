@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public CharacterController controller;
-    public float speed = 12f;
+    [SerializeField] private CharacterController controller;
+    [SerializeField] private float speed = 12f;
 
     Vector3 velocity;
-    public float gravity = -9.81f;
+    [SerializeField] private float gravity = -9.81f;
 
-    public Transform groundCheck;
-    public float groundDistance = 0.4f;
-    public LayerMask groundMask;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private float groundDistance = 0.4f;
+    [SerializeField] private LayerMask groundMask;
     bool isGrounded;
 
     // Update is called once per frame
