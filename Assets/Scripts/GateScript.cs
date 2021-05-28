@@ -6,6 +6,7 @@ public class GateScript : MonoBehaviour
 {
     [SerializeField] private GameObject ChildGameObject1;
     [SerializeField] private GameObject ChildGameObject2;
+    [SerializeField] private bool hasOpened = false;
 
     private void Start()
     {
@@ -19,9 +20,10 @@ public class GateScript : MonoBehaviour
         {
             Inventory inventory = GameObject.Find("Player").GetComponent<Inventory>();
 
-            if (inventory.gateKey == true)
+            if (inventory.gateKey == true && hasOpened == false)
             {
                 Debug.Log("Open");
+                hasOpened = true;
 
                 ChildGameObject1.transform.Rotate(0, 0, -90);
                 ChildGameObject2.transform.Rotate(0, 0, -90);
