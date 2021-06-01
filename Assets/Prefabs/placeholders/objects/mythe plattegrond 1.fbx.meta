@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d1f60d82f546b5046b78a24caf6181d6
+guid: 17901a13f0e694aeab9cb807454836d4
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
@@ -7,8 +7,14 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: leafs
-    second: {fileID: 2100000, guid: cb5a158431f99f94fb7ce7dc106a5c6e, type: 2}
+      name: Material
+    second: {fileID: 4085864035713673575, guid: 85f00168471634f738148d8d67a752d2,
+      type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.003
+    second: {fileID: 2100000, guid: 9a5ed806bc09f0744918684cbd9ba979, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -39,7 +45,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 100
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
