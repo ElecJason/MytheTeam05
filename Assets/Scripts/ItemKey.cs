@@ -5,19 +5,15 @@ using UnityEngine.Events;
 
 public class ItemKey : ItemBase
 {
-    private GameObject player;
+    [SerializeField] private UnityEvent GetKey;
 
-    private void Start()
-    {
-        player = GameObject.FindWithTag("Player");
-    }
     public override void OnTriggerEnter(Collider other)
     {
         base.OnTriggerEnter(other);
 
         if (other.gameObject.CompareTag("Player"))
         {
-            player.GetComponent<Inventory>().PickupKey();
+            GetKey.Invoke();
             Destroy(this.gameObject);
             Debug.Log("Key Found");
         }
