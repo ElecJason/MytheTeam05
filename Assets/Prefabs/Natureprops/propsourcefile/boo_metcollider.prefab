@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5137601537578296942}
   - component: {fileID: 8782712406110480512}
   m_Layer: 0
-  m_Name: mythe plattegrond 1
+  m_Name: boo_metcollider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -4532758957498553600, guid: 0fbfeb8e945574614958ceca6a28ca78, type: 3}
+  - {fileID: 2100000, guid: ccfddad346aa3fc41b379dce43e295cf, type: 2}
   - {fileID: 2100000, guid: cb5a158431f99f94fb7ce7dc106a5c6e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
