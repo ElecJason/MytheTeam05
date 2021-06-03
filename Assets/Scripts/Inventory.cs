@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-
-    [SerializeField] public bool gateKey = false;
+    public bool gateKey = false;
 
     public void PickupKey()
     {
+        Debug.Log("gatekey is nu true");
         gateKey = true;
     }
 }

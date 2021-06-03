@@ -109,7 +109,8 @@ MonoBehaviour:
   GetKey:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2368390349378340045, guid: 4397e1d36f57ccf4688b5256f471d520,
+          type: 3}
         m_MethodName: PickupKey
         m_Mode: 1
         m_Arguments:
