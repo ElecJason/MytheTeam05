@@ -13,8 +13,7 @@ public class ItemKey : ItemBase
 
         if (other.gameObject.CompareTag("Player"))
         {
-            Inventory inventory = GameObject.Find("Player").GetComponent<Inventory>();
-            inventory.PickupKey();
+            GetKey.Invoke();
             Destroy(this.gameObject);
             Debug.Log("Key Found");
         }

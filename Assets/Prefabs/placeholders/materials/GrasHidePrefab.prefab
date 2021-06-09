@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5839265539868005556}
   - component: {fileID: 5839265539868005557}
   m_Layer: 0
-  m_Name: GrasHidePrefab
+  m_Name: grass_placeholder
   m_TagString: Grass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6b326a3ce7d834cf881f63ccd0d5bf7d, type: 2}
+  - {fileID: 2100000, guid: 7e0db8faea64447d08dbeca18ab1a587, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
