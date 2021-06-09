@@ -5,13 +5,17 @@ using UnityEngine.AI;
 
 public class ChasePlayer : MonoBehaviour
 {
+    [Header("Gameobject variables")]
     [SerializeField] private GameObject player;
     [SerializeField] private NavMeshAgent agent;
+    [SerializeField] private AudioSource source;
 
+    [Header("Speed variables")]
     [SerializeField] private float normalSpeed = 3;
     [SerializeField] private float runningSpeed = 6;
     [SerializeField] private float runDistance = 4;
 
+    [Header("Distance variables")]
     [SerializeField] private float minFloat = -1;
     [SerializeField] private float maxFloat = 1;
 
@@ -34,10 +38,12 @@ public class ChasePlayer : MonoBehaviour
 
         if (dist >= runDistance) {
             agent.speed = runningSpeed;
+            source.pitch = 0f;
         }
         else
         {
             agent.speed = normalSpeed;
+            source.pitch = 1.3f;
         }
     }
 

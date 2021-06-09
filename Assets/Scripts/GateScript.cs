@@ -25,8 +25,8 @@ public class GateScript : MonoBehaviour
                 Debug.Log("Open");
                 hasOpened = true;
 
-                ChildGameObject1.transform.Rotate(0, 0, -90);
-                ChildGameObject2.transform.Rotate(0, 0, -90);
+                ChildGameObject1.transform.Rotate(0, 0, 90);
+                ChildGameObject2.transform.Rotate(0, 0, 90);
             }
         }
     }
