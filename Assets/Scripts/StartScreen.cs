@@ -9,6 +9,4 @@ public class StartScreen : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
-
-    
 }
