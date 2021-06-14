@@ -10513,7 +10513,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1874063540}
-        m_MethodName: EndGame
+        m_MethodName: WinGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15624,7 +15624,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3230285355175794338, guid: 4397e1d36f57ccf4688b5256f471d520,
         type: 3}
+      propertyPath: loseGame.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230285355175794338, guid: 4397e1d36f57ccf4688b5256f471d520,
+        type: 3}
       propertyPath: stopGame.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230285355175794338, guid: 4397e1d36f57ccf4688b5256f471d520,
+        type: 3}
+      propertyPath: loseGame.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3230285355175794338, guid: 4397e1d36f57ccf4688b5256f471d520,
@@ -15632,6 +15642,11 @@ PrefabInstance:
       propertyPath: stopGame.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3230285355175794338, guid: 4397e1d36f57ccf4688b5256f471d520,
+        type: 3}
+      propertyPath: loseGame.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1874063540}
     - target: {fileID: 3230285355175794338, guid: 4397e1d36f57ccf4688b5256f471d520,
         type: 3}
       propertyPath: stopGame.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -15649,6 +15664,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3230285355175794338, guid: 4397e1d36f57ccf4688b5256f471d520,
         type: 3}
+      propertyPath: loseGame.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230285355175794338, guid: 4397e1d36f57ccf4688b5256f471d520,
+        type: 3}
       propertyPath: startWander.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 0}
@@ -15659,8 +15679,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3230285355175794338, guid: 4397e1d36f57ccf4688b5256f471d520,
         type: 3}
+      propertyPath: loseGame.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoseGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230285355175794338, guid: 4397e1d36f57ccf4688b5256f471d520,
+        type: 3}
       propertyPath: stopGame.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EndGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 3230285355175794338, guid: 4397e1d36f57ccf4688b5256f471d520,
+        type: 3}
+      propertyPath: loseGame.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 3230285355175794338, guid: 4397e1d36f57ccf4688b5256f471d520,
         type: 3}

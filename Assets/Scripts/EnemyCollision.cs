@@ -8,13 +8,13 @@ public class EnemyCollision : MonoBehaviour
     [SerializeField] private UnityEvent startWander;
     [SerializeField] private UnityEvent stayWander;
     [SerializeField] private UnityEvent stopWander;
-    [SerializeField] private UnityEvent stopGame;
+    [SerializeField] private UnityEvent loseGame;
     void OnCollisionEnter(Collision col)
     {
         if (col.gameObject.CompareTag("Enemy"))
         {
             Debug.LogError("De enemy heeft de player.");
-            stopGame.Invoke();
+            loseGame.Invoke();
         }
     }
 
