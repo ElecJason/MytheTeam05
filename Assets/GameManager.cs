@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 { 
     public void EndGame()
     {
-        Time.timeScale = 0f;
+        Time.timeScale = 0.5f;
         Debug.LogError("De game is over");
     }
 }

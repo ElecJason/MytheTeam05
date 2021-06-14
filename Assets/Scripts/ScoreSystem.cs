@@ -22,7 +22,7 @@ public class ScoreSystem : MonoBehaviour
 
     private void Update()
     {
-        if(seconds < 10)
+        if(Score < 10)
         {
             scoreDisplay.text = "Time: " + minutes + ":0" + seconds.ToString();
         }

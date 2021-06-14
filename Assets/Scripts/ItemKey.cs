@@ -5,7 +5,12 @@ using UnityEngine.Events;
 
 public class ItemKey : ItemBase
 {
-    [SerializeField] private UnityEvent GetKey;
+    private GameObject player;
+
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
 
     public override void OnTriggerEnter(Collider other)
     {
@@ -13,8 +18,7 @@ public class ItemKey : ItemBase
 
         if (other.gameObject.CompareTag("Player"))
         {
-            Inventory inventory = GameObject.Find("Player").GetComponent<Inventory>();
-            inventory.PickupKey();
+            player.GetComponent<Inventory>().PickupKey();
             Destroy(this.gameObject);
             Debug.Log("Key Found");
         }
