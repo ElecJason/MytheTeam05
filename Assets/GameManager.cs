@@ -7,8 +7,8 @@ public class GameManager : MonoBehaviour
 { 
     public void EndGame()
     {
-        Time.timeScale = 0.5f;
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
+        Cursor.lockState = CursorLockMode.Confined;
         Debug.LogError("De game is over");
     }
 }
