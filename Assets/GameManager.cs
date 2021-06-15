@@ -4,18 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
-{
-    public void WinGame()
+{ 
+    public void EndGame()
     {
         SceneManager.LoadScene(3);
         Cursor.lockState = CursorLockMode.Confined;
-        Debug.LogError("De game is over, you won");
-    }
-
-    public void LoseGame()
-    {
-        SceneManager.LoadScene(2);
-        Cursor.lockState = CursorLockMode.Confined;
-        Debug.LogError("De game is over, you lost");
+        Debug.LogError("De game is over");
     }
 }
