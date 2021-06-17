@@ -15,6 +15,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private LayerMask groundMask;
     bool isGrounded;
 
+    private void Start()
+    {
+
+    }
     // Update is called once per frame
     void Update()
     {
