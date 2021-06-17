@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8198772674822601700}
   - component: {fileID: 5073375187025916993}
   - component: {fileID: 7029213654803611787}
+  - component: {fileID: 3980718345506378265}
   m_Layer: 0
   m_Name: forest lamp
   m_TagString: Untagged
@@ -80,6 +81,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &3980718345506378265
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8830491121450393950}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0033917218, y: 0.0016703182, z: 0.03752807}
+  m_Center: {x: -0.000029110013, y: 0.0003691034, z: 0.018934984}
 --- !u!1001 &940964838216533235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95,17 +109,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3b53f4c1d9beb45ed811c2d783779743,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.3141
+      value: 1.1039623
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b53f4c1d9beb45ed811c2d783779743,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.3141
+      value: 1.1039623
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b53f4c1d9beb45ed811c2d783779743,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.3141
+      value: 1.1039623
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b53f4c1d9beb45ed811c2d783779743,
         type: 3}
@@ -120,7 +134,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3b53f4c1d9beb45ed811c2d783779743,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.02938
+      value: 0.029456
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3b53f4c1d9beb45ed811c2d783779743,
         type: 3}
