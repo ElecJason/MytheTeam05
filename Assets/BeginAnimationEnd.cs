@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class BeginAnimationEnd : MonoBehaviour
 {
-     if (this.animator.GetCurrentAnimatorStateInfo(0).IsName("stateEnd"))
- 	{
-    		debug.log{"ended"};
- 	}
+    private void Start()
+    {
+        StartCoroutine(CutSceneTimer());
+    }
+
+    IEnumerator CutSceneTimer()
+    {
+        yield return new WaitForSeconds(20);
+        Destroy(this.gameObject);
+    }
 }
