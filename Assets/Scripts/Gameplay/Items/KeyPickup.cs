@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class ItemKey : ItemBase
+public class KeyPickup : ItemBase
 {
     private GameObject player;
 
@@ -18,7 +18,7 @@ public class ItemKey : ItemBase
 
         if (other.gameObject.CompareTag("Player"))
         {
-            player.GetComponent<Inventory>().PickupKey();
+            player.GetComponent<InventoryManager>().PickupKey();
             Destroy(this.gameObject);
             Debug.Log("Key Found");
         }

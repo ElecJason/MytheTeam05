@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class mudPoolScript : MonoBehaviour
+public class EndGameZone : MonoBehaviour
 {
     [SerializeField] private UnityEvent EndGame;
 

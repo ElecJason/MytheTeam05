@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreSystem : MonoBehaviour
+public class ScoreCounter : MonoBehaviour
 {
     private IEnumerator coroutine;
     private int Score = 00;
@@ -11,13 +11,11 @@ public class ScoreSystem : MonoBehaviour
     [SerializeField] private float seconds;
     [SerializeField] private float minutes;
 
-
     void Start()
     {
         scoreDisplay = GetComponent<Text>();
         coroutine = WaitAndPrint(1.0f);
         StartCoroutine(coroutine);
-
     }
 
     private void Update()
@@ -35,8 +33,6 @@ public class ScoreSystem : MonoBehaviour
 
     private IEnumerator WaitAndPrint(float waitTime)
     {
-        
-
         while (true)
         {
             yield return new WaitForSeconds(waitTime);
@@ -46,6 +42,5 @@ public class ScoreSystem : MonoBehaviour
             minutes = Mathf.Floor(Score / 60);
             seconds = Mathf.RoundToInt(Score % 60);
         }
-
     }
 }

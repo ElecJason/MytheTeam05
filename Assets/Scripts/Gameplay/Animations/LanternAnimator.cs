@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class lanternScript : MonoBehaviour
+public class LanternAnimator : MonoBehaviour
 {
     private Animator anim;
 

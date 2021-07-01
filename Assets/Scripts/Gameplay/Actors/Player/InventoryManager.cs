@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour
+public class InventoryManager : MonoBehaviour
 {
 
     [SerializeField] public bool gateKey = false;

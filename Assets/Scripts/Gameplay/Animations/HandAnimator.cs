@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class handAnimation : MonoBehaviour
+public class HandAnimator : MonoBehaviour
 {
     private Animator anim;
 

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GateScript : MonoBehaviour
+public class OpenGate : MonoBehaviour
 {
     [SerializeField] private GameObject ChildGameObject1;
     [SerializeField] private GameObject ChildGameObject2;
@@ -18,7 +18,7 @@ public class GateScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Inventory inventory = GameObject.Find("Player").GetComponent<Inventory>();
+            InventoryManager inventory = GameObject.Find("Player").GetComponent<InventoryManager>();
 
             if (inventory.gateKey == true && hasOpened == false)
             {
